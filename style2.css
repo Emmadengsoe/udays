@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F7F5F5;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 95%;
+    padding-top: 115px;
+    padding-bottom: 70px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: auto;
+    width: 200px;
+    height: 400px;
+    background: none;
+}
+
+.swiper-slide .imgBx{
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    
+    
+}
+
+.swiper-slide .imgBx img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width:  auto;
+    height: 250px;
+}
+
+.details{
+    text-align: center;
+    margin-top: 5%;
+}
+
+button{
+    border: solid 1px;
+    border-color: darkred;
+    box-shadow: 10px 10px 20px lightgray;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 10px;
+    width: 80%;
+
+}
+
+.swiper-pagination{
+    margin-bottom: 80px;   
+}
+
+/*uddannelse start*/
+h1 {
+    color: #AE0F0A;
+    text-align: center;
+}
+
+.broedtekst-uddannelse {
+    padding: 1.5%;
+    text-align: center;
+}
+
+/*uddannelse slut*/
+
+header {
+    background-color: red;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+* p {
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+* h1 {
+    font-weight: 600;
+}
+
+h3{font-size: 1.9em;
+font-weight: 500;
+color: darkred;}
+
+.header {
+    background-color: #AE0F0A;
+}
+
+.logobillede {
+    width: 13%;
+    margin-left: 44%;
+}
+
+
+

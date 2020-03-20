@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Udays - Hvilken uddannelse passer til dig?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link href="" rel="stylesheet">
+
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="style2.css">
+
+    <!-- Hotjar Tracking Code for http://www.emmadengsoe.dk/udays -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 1736544,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+
+    </script>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div id="logo-burger">
+            <a href="index.html"><img class="logobillede" src="img/logo.png" alt="Logo"></a>
+        </div>
+    </header>
+    <br>
+    <main>
+        <h1>VÆLG DIN UDDANNELSE</h1>
+        <p class="broedtekst-uddannelse">På Erhvervsakademi Aarhus har du mulighed for at vælge din fremtid ud fra en bred vifte af uddannelser. Vi har samlet et overblik til dig, der er interesseret i at høre om specifikke uddannelser. </p>
+
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="img/finans.png">
+                    </div>
+                    <div class="details">
+                        <button>
+                            <h3>Finansøkonom</h3>
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgBx"><a href="side3.html">
+                            <img src="img/Multimediedesign.png">
+                        </a></div>
+                    <a href="side3.html">
+                        <div class="details"><button>
+                                <h3>Multimediedesign</h3>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="img/jord.png">
+                    </div>
+                    <div class="details"><button>
+                            <h3>Jordbrugsteknolog</h3>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="img/laborant.png">
+                    </div>
+                    <div class="details"><button>
+                            <h3>Laborant</h3>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="img/markedsforing.png">
+                    </div>
+                    <div class="details">
+                        <button>
+                            <h3>Markedsføringsøkonom</h3>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var appendNumber = 4;
+            var prependNumber = 1;
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                centeredSlides: true,
+                spaceBetween: 30,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+            document.querySelector('.prepend-2-slides').addEventListener('click', function(e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>',
+                    '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>'
+                ]);
+            });
+            document.querySelector('.prepend-slide').addEventListener('click', function(e) {
+                e.preventDefault();
+                swiper.prependSlide('<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>');
+            });
+            document.querySelector('.append-slide').addEventListener('click', function(e) {
+                e.preventDefault();
+                swiper.appendSlide('<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>');
+            });
+            document.querySelector('.append-2-slides').addEventListener('click', function(e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>',
+                    '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>'
+                ]);
+            });
+
+        </script>
+
+
+
+
+
+
+    </main>
+    <footer></footer>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
